@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/search.js" defer></script>
+    <!--Box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>DARB MARKET</title>
+    <!--Google fonts-->
+    <!--<link rel="preconnect" href="https://fonts.gstatic.com"/>-->
+    <link href="https://fonts.googleapis.com/css2?family=New-Rock:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  </head>
+  
+  <body>
+    <!--Nav-->
+    <nav class="nav">
+      <div class="nav__center container">
+        <div class="nav__logo">
+					<a href="./index.html" ><h1>DARB <span>MARKET</span></h1></a>
+				</div>
+          <div class="div">
+          <label for="buscar"><span><i class="bx bx-search" alt="BUSCAR"></i></span></label>
+          <input type="text" id="buscar" data-search placeholder="Buscar remeras">
+          </div>
+          <div>
+        <a href="./login.html"><box-icon id="box" name='log-in' color='#e81247' alt="LOGIN"></box-icon></a>
+        </div>
+				<ul class="nav__list">
+					<div class="carrito__icon">
+						<i class="bx bx-cart-add" alt="Carrito"></i>
+						<span class="item__total">0</span>
+					</div>
+				</ul>
+      </div>
+    </nav>
+    <section>
+    <div id="sale">
+      <video autoplay muted preload loop src="https://cdn.videvo.net/videvo_files/video/free/2015-03/large_watermarked/fire_background_loop2_videvo2_preview.mp4"></video>
+    <h1 id="salet">DARB</h1>
+    </div>
+  </section>
+    <!--Filter-->
+    <section class="filter">
+      <div class="grid">
+        <iframe src="https://open.spotify.com/embed/playlist/2qeDz170SdpniBTlYzs7DD?utm_source=generator&theme=0" width="100%" height="70" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <div class="category">
+          <select id="category" onclick="categoryValue()">
+            <option value="">REMERAS</option>
+            <option value="ghost">Ghost</option>
+            <option value="volbeat">Volbeat</option>
+            <option value="miw">Motionless in White</option>
+            <option value="nin">Nine Inch Nails</option>
+            <option value="suicidal">Suicidal Tendencies</option>
+            <option value="rancid">Rancid</option>
+            <option value="wildhearts">The Wildhearts</option>
+            <option value="rammstein">Rammstein</option>
+            <option value="euskal">EuskalHerria</option>
+            <option value="geek">Geeks</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!--Productos-->
+    <section class="productos">
+      <div class="productos__center">
+        <!-- <div class="producto">
+          <div class="image__container">
+            <img src="" alt="remeras">
+          </div>
+          <div class="producto__footer">
+            <h1>REMERAS BANDAS</h1>
+            <div class="price">U$10.00</div>
+          </div>
+          <div class="bottom">
+            <div class="btn__group">
+              <a href="#" class="btn addToCart">Añadir carrito</a>
+              <a href="producto-detalles.html" class="btn view">Vista</a>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <!--Carrito-->
+    
+    <section class="carrito__overlay">
+      <div class="carrito">
+        <span class="close__carrito">
+          <i class="bx bx-x"></i>
+        </span>
+        <h1>Su Carrito</h1>
+
+        <div class="carrito__center">
+
+          <!-- <div class="carrito__item">
+
+            <img src="" alt="remeras">
+            <div>
+              <h3>REMERAS BANDAS </h3>
+              <p class="price">U$10</p>
+            </div>
+            <div>
+              <span>
+                <i class="bx bxs-up-arrow"></i>
+              </span>
+              <p>1</p>
+              <span>
+                <i class="bx bxs-down-arrow"></i>
+              </span>
+            </div>
+            <div>
+              <span class="remove__item">
+                <i class="bx bx-trash"></i>
+              </span>
+            </div>
+
+            
+          </div> -->
+        </div>
+
+        <div class="carrito__footer">
+            <h3>Total: U$ <span class="carrito__total">0</span></h3>
+            <button class="clear__carrito btn">remover carrito</button>
+        </div>
+      </div>
+    </section>
+<footer>
+  <i class='bx bxs-chevrons-up' ></i>
+  <div id="contacto">
+    <form action="" class="formulario" id="formulario">
+			<!-- Grupo: Usuario -->
+			<div class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="john123">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="John Doe">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password" id="password">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Contraseña 2 -->
+			<div class="formulario__grupo" id="grupo__password2">
+				<label for="password2" class="formulario__label">Repetir Contraseña</label>
+				<div class="formulario__grupo-input">
+					<input type="password" class="formulario__input" name="password2" id="password2">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+			</div>
+
+			<!-- Grupo: Correo Electronico -->
+			<div class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<div class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</div>
+
+			<!-- Grupo: Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</div>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+<br>
+<i class='bx bxl-instagram icon'></i>
+<i class='bx bxl-twitter icon' ></i>
+<i class='bx bxl-twitch icon' ></i>
+<i class='bx bxl-facebook-circle icon' ></i>
+<i class='bx bxl-discord-alt icon' ></i>
+<i class='bx bxl-whatsapp icon' ></i>
+
+<br>
+<i class='bx bxl-linkedin icon' ></i>
+By <span>DARB 2022</span>
+<i class='bx bxl-github icon'></i>
+
+  </div>
+</footer>
+    <script src="./js/formulario.js"></script>
+	  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+{
+    "status": "success",
+    "items": [{
+            "id": 1,
+            "title": "REMERAS GHOST",
+            "price": 10,
+            "image": "https://m.media-amazon.com/images/I/71GdoasmsGL._AC_UX569_.jpg",
+            "category": "ghost"
+        },
+        {
+            "id": 2,
+            "title": "REMERAS VOLBEAT",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/fYoAAOSw~t1hgjXF/s-l500.jpg",
+            "category": "volbeat"
+        },
+        {
+            "id": 3,
+            "title": "REMERAS MOTIONLESS IN WHITE",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/nW0AAOSw8FtbfFb3/s-l500.jpg",
+            "category": "miw"
+        },
+        {
+            "id": 4,
+            "title": "REMERAS NINE INCH NAILS",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/Zi4AAOSwZClh6NSh/s-l500.jpg",
+            "category": "nin"
+        },
+        {
+            "id": 5,
+            "title": "REMERAS SUICIDAL TENDENCIES",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/cJgAAOSwSxliOL2O/s-l500.jpg",
+            "category": "suicidal"
+
+        },
+        {
+            "id": 6,
+            "title": "REMERAS RANCID",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/QroAAOSwuT9hqvWc/s-l500.jpg",
+            "category": "rancid"
+
+        },
+        {
+            "id": 7,
+            "title": "REMERAS THE WILDHEARTS",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/~QcAAOSw9WxhIj9o/s-l500.jpg",
+            "category": "wildhearts"
+        },
+        {
+            "id": 8,
+            "title": "REMERAS RAMMSTEIN",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/HDEAAOSwIXxf5ioA/s-l500.jpg",
+            "category": "rammstein"
+        },
+        {
+            "id": 9,
+            "title": "REMERAS EUSKAL HERRIA",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/rE0AAOSwIdtgzCL3/s-l500.jpg",
+            "category": "euskal"
+        },
+        {
+            "id": 10,
+            "title": "REMERAS GEEK",
+            "price": 10,
+            "image": "https://i.ebayimg.com/images/g/lzQAAOSwyJhhsb1K/s-l500.jpg",
+            "category": "geek"
+        }
+    ]
+}
